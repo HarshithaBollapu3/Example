@@ -1,0 +1,14 @@
+package javastring;
+
+public class Stringbuilder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       StringBuilder sb = new StringBuilder("Hello People!This is a StringBuilder");
+       sb.insert(12, "Welcome");
+       sb.replace(6,12,"programmer");
+       
+       
+	}
+
+}

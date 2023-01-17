@@ -1,0 +1,7 @@
+package Polymorphism;
+
+import mypackage.Ticket;
+
+public class conformTicket extends Ticket {
+
+}

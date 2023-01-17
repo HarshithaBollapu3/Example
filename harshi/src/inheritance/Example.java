@@ -1,0 +1,12 @@
+package inheritance;
+
+public class Example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Manager obj=new Manager();
+        obj.set();
+        obj.display();
+	}
+
+}

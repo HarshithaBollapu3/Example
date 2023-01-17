@@ -1,0 +1,16 @@
+package collection;
+import java.util.*;
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        List<String> list = new ArrayList<String>();
+        list.add("tea");
+        list.add("coffee");
+        list.add("black coffee");
+        list.add("Espresso");
+        list.add("regular coffee");
+        System.out.println(list.get(2));
+	}
+
+}

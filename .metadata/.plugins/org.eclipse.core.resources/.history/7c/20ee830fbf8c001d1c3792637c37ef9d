@@ -1,0 +1,14 @@
+package Polymorphism;
+static int id;
+public Employee(){
+	id++;
+}
+public class Employee {
+ String empname;
+ String designation;
+ String department;
+}
+ public Static void main(String[] args){
+	 
+ }
+ }

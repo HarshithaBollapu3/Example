@@ -1,0 +1,20 @@
+package Threadapp;
+
+public class Multiapp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Printchar obj = new Printchar();
+       Printnum obj1 = new Printnum();
+       obj.start();
+       /*try{
+    	   obj1.yield();
+       }
+       catch(Exception e){
+    	   System.out.println(e);
+       }*/
+       obj1.start();
+       
+	}
+
+}

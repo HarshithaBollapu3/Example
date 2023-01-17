@@ -1,0 +1,14 @@
+package Threadapp;
+
+public class Customer extends Thread{
+     public void run(){
+    	try{
+    		 String name = "cap";
+        	 String city = "kadapa";
+        	 System.out.print(name);
+        	 System.out.print(city);
+    	} catch(Exception e){
+    		System.out.print(e);
+    	}
+     }
+}

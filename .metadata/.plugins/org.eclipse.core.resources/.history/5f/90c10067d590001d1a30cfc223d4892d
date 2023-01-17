@@ -1,0 +1,19 @@
+package collection;
+import java.util.*;
+public class Hp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       NavigableSet<Integer> ns =new TreeSet<Integer>();
+       ns.add(1);
+       ns.add(3);
+       ns.add(2);
+       ns.add(4);
+       ns.add(5);
+       System.out.println(ns.higher(4));
+       System.out.println(ns.lower(3));
+       System.out.println(ns.floor(4));
+       System.out.println(ns.ceiling(5));
+	}
+
+}

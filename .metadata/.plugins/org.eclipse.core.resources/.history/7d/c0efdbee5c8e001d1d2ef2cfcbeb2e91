@@ -1,0 +1,65 @@
+package ipndop;
+import java.io.*;
+public class Customer implements Serializable{
+	String customername;
+	int address;
+	Customer(String customername, int address){
+		this.customername = customername;
+		this.address=address;
+	}
+	public void showDetails(){
+		System.out.println("customername"+customername);
+		System.out.println("address"+address);
+	}
+}
+class customerRecords{
+		// TODO Auto-generated method stub
+public void writeToFile(Customer obj)
+ {
+    try{
+				FileOutputStream fout=new FileOutputStream("C:\\Users\\BOLHARSH\\Pictures\\Screenshots\\file.txt");
+				ObjectOutputStream objout=new ObjectOutputStream(fout);
+				objout.writeObject(obj);
+				objout.flush();
+			}
+		catch(FileNotFoundException e)
+		   {
+	         System.out.println(e);
+			}
+			catch(IOException e)
+		    {
+			  System.out.println(e);
+			}
+		
+}
+public void readFromFile()
+	 {
+		try{
+			 FileInputStream fin=new FileInputStream("C:\\Users\\BOLHARSH\\Pictures\\Screenshots\\file.txt");
+			ObjectInputStream objin=new ObjectInputStream(fin);
+			Customer customer=(Customer)objin.readObject();
+			customer.showDetails();
+			}
+		catch(FileNotFoundException e)
+		{
+			System.out.println(e);
+		}
+		catch(IOException e)
+	   {
+		System.out.println(e);
+	   }
+		catch(ClassNotFoundException e)
+		{
+			 System.out.println(e);
+		}
+	 }
+	public static void main(String[] args) {
+			// TODO Auto-generated method stub
+				Customer acc=new Customer("harshitha",3);
+				customerRecords records=new customerRecords();
+				records.writeToFile(acc);
+				records.readToFile();
+	}
+	
+}
+

@@ -1,0 +1,17 @@
+package ipndop;
+import java.io.*;
+public class Practice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       File obj= new File("C://users//BOLHARSH//Pictures//myinfo.txt");
+       if(obj.exists()){
+    	  System.out.println("file name"+ obj.getName());
+    	  System.out.println("path"+obj.getAbsolutePath());
+       }
+       else{
+    	   File obj1= new File("C://users//BOLHARSH//Pictures//myinfo.txt");   
+       }
+	}
+
+}
